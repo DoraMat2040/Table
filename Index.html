@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблицы</title>
+    <style>
+        td,
+        th {
+            border: 1px solid aquamarine;
+        }
+
+        table {
+            /* линия между ячейками отображаеться только одна*/
+            border-collapse: collapse;
+            min-width: 1000px;
+        }
+
+        .total-td {
+            text-align: right;
+            padding-right: 65px;
+        }
+
+        thead {
+            background-color: crimson;
+        }
+
+        tfoot {
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="prise">
+        <caption>Товары</caption>
+        <thead>
+            <tr>
+                <th>Номер по порядку</th>
+                <th>Наиминование товаров</th>
+                <th>ед.измерения</th>
+                <th>Каличество</th>
+                <th>цена за единицу измерения</th>
+                <th>стоимость</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Таматы</td>
+                <td>Киллограммм</td>
+                <td>каличество</td>
+                <td>50</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Огурцы</td>
+                <td>Киллограммм</td>
+                <td>количество</td>
+                <td>70</td>
+                <td>700</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>яблоки</td>
+                <td>Киллограммм</td>
+                <td>каличество</td>
+                <td>100</td>
+                <td>1000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Итого</td>
+                <td class="total-td" colspan="5">2200</td>
+            </tr>
+        </tfoot>
+
+
+
+    </table>
+</body>
+
+</html>
